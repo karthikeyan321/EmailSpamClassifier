@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Spam Classifier</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Smart Spam Detection</p>
+                <h1>Email Spam Classifier</h1>
+                <p>Type any email subject and body, then click classify to see if the message looks like spam.</p>
+            </div>
+        </header>
+
+        <main class="content-grid">
+            <section class="card form-card">
+                <h2>Try it now</h2>
+                <form id="classifier-form">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="Enter email subject" required />
+
+                    <label for="body">Email body</label>
+                    <textarea id="body" name="body" rows="8" placeholder="Paste the email content here" required></textarea>
+
+                    <button type="submit">Classify Message</button>
+                </form>
+            </section>
+
+            <section class="card result-card">
+                <h2>Result</h2>
+                <div id="result-panel" class="result-panel">
+                    <p class="hint">Submit the form to see the classification.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-card">
+            <p>Open this project in Chrome, Firefox, or Edge using <strong>http://localhost:8080</strong> after starting the Java server.</p>
+            <p>Designed with clean gradients, clear fonts, and responsive styling for modern browsers.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
